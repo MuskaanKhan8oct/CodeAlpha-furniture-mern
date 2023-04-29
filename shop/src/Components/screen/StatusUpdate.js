@@ -255,7 +255,7 @@ const StatusUpdate = () => {
                                           )
                                         }
                                       >
-                                        Confirmed Order
+                                        Packing Order
                                       </h3>
                                     </div>
 

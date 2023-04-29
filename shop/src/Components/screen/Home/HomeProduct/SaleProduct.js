@@ -10,7 +10,7 @@ export default function SaleProduct() {
   const { sale } = useParams();
 
   useEffect(() => {
-    fetch(`/product/sale/${sale}`, {
+    fetch(`/products`, {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("jwt"),
       },

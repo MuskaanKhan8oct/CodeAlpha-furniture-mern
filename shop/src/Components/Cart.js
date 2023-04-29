@@ -30,7 +30,7 @@ const MyCart = () => {
 
   // remove from carta
   const removeItemFromCart = (cartId, itemId) => {
-    console.log(cartId, itemId);
+   
     fetch(`/cart/${cartId}/item/${itemId}`, {
       method: "delete",
       headers: {
@@ -54,7 +54,7 @@ const MyCart = () => {
 
   //addone in cartb
   const handleAddOne = async (itemId) => {
-    console.log(itemId);
+  
     try {
       const response = await fetch(`/cart/add/${itemId}`, {
         method: "PUT",
@@ -69,7 +69,7 @@ const MyCart = () => {
       } else {
         notifyA(data.error);
       }
-      console.log(data.message);
+
       // update the items in state to reflect the increased quantity
       setItems(
         items.map((item) => {

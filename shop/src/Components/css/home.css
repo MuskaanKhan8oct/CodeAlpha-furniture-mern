@@ -995,8 +995,8 @@ h3.cart-title {
   width: 20%;
 }
 figure.instagram-item img.insta-image {
-  width: 120%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
 }
 .instagram-item .icon-overlay {
